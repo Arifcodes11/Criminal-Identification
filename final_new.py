@@ -183,8 +183,7 @@ def get_location():
 
 # Function to send SMS with criminal location and details
 def send_sms(location, details):
-   
-    client = Client(account_sid, auth_token)
+    
 
     lat, lon, city, country = location
     google_maps_link = f"https://www.google.com/maps?q={lat},{lon}"
